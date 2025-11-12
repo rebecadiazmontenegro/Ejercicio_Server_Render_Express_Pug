@@ -1,15 +1,9 @@
 const express = require("express");
+require("dotenv").config();
 const filmsRouter = require("./routes/filmsWeb.route");
 
 const app = express();
 const port = 3000;
-
-require("dotenv").config();
-
-// Middlewares
-const error404 = require("./middlewares/error404");
-// Morgan
-const morgan = require("./middlewares/morgan");
 
 // Configuración de Pug
 app.set('view engine', 'pug');

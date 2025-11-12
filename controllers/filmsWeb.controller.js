@@ -1,18 +1,18 @@
 const API_KEY = process.env.KEY;
 
-// Renderiza el formulario inicial
+// GET Renderiza el formulario inicial
 const renderHome = (req, res) => {
   res.render("home");
 };
 
-// Procesa el formulario y redirige a /film/:title
+// GET Procesa el formulario y redirige a /film/:title
 const searchFilm = (req, res) => {
   const { title } = req.body;
   if (!title) return res.redirect("/");
   res.redirect(`/film/${encodeURIComponent(title)}`);
 };
 
-// Hace fetch a la API y muestra los datos
+// POST Hace fetch a la API y muestra los datos
 const getFilm = async (req, res) => {
   const { title } = req.params;
 
