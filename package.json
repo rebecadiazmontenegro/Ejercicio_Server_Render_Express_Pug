@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "install": "^0.13.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.11",
+    "pg": "^8.16.3",
+    "pug": "^3.0.3"
+  },
+  "name": "ejercicio_server_render_express_pug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rebecadiazmontenegro/Ejercicio_Server_Render_Express_Pug.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rebecadiazmontenegro/Ejercicio_Server_Render_Express_Pug/issues"
+  },
+  "homepage": "https://github.com/rebecadiazmontenegro/Ejercicio_Server_Render_Express_Pug#readme"
+}

@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= film.Title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1= film.Title
+
+    if film.Poster && film.Poster !== "N/A"
+      img(src=film.Poster alt=film.Title width="250")
+
+    p
+      strong Año:
+      |  #{film.Year}
+    p
+      strong Director:
+      |  #{film.Director}
+    p
+      strong Género:
+      |  #{film.Genre}
+    p
+      strong Sinopsis:
+      |  #{film.Plot}
+    p
+      strong IMDb Rating:
+      |  #{film.imdbRating}
+
+    a(href="/") Volver al inicio
